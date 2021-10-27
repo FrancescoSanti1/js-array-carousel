@@ -1,3 +1,4 @@
+/* regole generali */
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +31,8 @@
 
 #immagini img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -42,7 +45,7 @@
     color: white;
 }
 
-/* blocco immagini piccole */
+/* blocco immagini piccole laterali */
 #elenco {
     width: 15%;
     height: 500px;
@@ -65,21 +68,29 @@
 }
 
 .successivo, .precedente {
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
     border-radius: 50%;
     background-color: grey;
     cursor: pointer;
+    z-index: 1;
+    color: white;
+    text-align: center;
 }
 
 .successivo {
     position: absolute;
     bottom: 10px;
-    left: calc(50% - 10px);
+    left: calc(50% - 12px);
 }
 
 .precedente {
     position: absolute;
     top: 10px;
-    left: calc(50% - 10px);
+    left: calc(50% - 12px);
+}
+
+.fas {
+    font-size: 14px;
 }
