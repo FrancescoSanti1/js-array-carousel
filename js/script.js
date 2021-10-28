@@ -27,6 +27,7 @@ for (let i = 0; i < items.length; i++) {
     mieThumb += `
     <div class="thumb">
         <img src="${items[i]}" alt="${title[i]}">
+        <div class="trasparenza"></div>
     </div>`;
 }
 
